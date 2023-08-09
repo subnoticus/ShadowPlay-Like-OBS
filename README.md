@@ -7,7 +7,7 @@ In order to make this function, you have to use OBS Studio (https://obsproject.c
 
 This script is really simple, it makes a directory in your Videos folder in Home named after the current active window when activated. Then, it moves anything in a folder (such as your replay) to the newly created folder.
 
-# General Warning about X11 high refresh rate with XSHM Screen Capture.
+# General Warning about X11 high refresh rate with XSHM Screen Capture
 I don't fuckin' know if this is a issue with me or just OBS but some and I mean only _some_ games run at 60hz when I use XSHM screen capture with OBS. Since I use a 144hz monitor, this is annoying. If this also occurs to you, you can fix it by making manual scenes for the games where OBS will capture them with Window Capture. Of course, this wouldn't be real replay software if it didn't do that automagically. For this, use "Automatic Scene Switcher" in tools. I made a picture below to describe how I use it.
 
 ![Screenshot_20230809_115358](https://github.com/subnoticus/ShadowPlay-Like-OBS/assets/106459385/073c9d77-124e-4141-b0df-f01dcac59efd)
