@@ -1,5 +1,5 @@
 # ShadowPlay-Like-OBS
-Simple script to make OBS Studio function like ShadowPlay for Linux. Not only that, but a simple guide on how to make OBS function like ShadowPlay.
+Simple script and guide to make OBS Studio function like ShadowPlay for Linux.
 
 (I didn't know anywhere else to upload this)
 
