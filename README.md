@@ -1,4 +1,4 @@
-# ShadowPlay-Like-Linux-Script
+# ShadowPlay-Like-OBS
 Simple script to make OBS Studio function like ShadowPlay for Linux. Not only that, but a simple guide on how to make OBS function like ShadowPlay.
 
 (I didn't know anywhere else to upload this)
@@ -47,3 +47,13 @@ Last but not least, make sure _all_ videos are saved in ~/Videos/temp_replays.
 After that, you should be able to use the keybind you assigned to both OBS Studio and the script to save replays and have it placed in the folder of your active window. You know it works if you see _this_ when pressing the keybind. Also, it will tell you where the video is saved.
 
 ![image](https://github.com/subnoticus/ShadowPlay-Like-Linux-Script/assets/106459385/c0c9681b-79ff-48b2-ac44-b364cee3f467)
+
+# How to make OBS Studio startup minimized and start replaying automagically?
+
+Go to General settings and check these.
+![image](https://github.com/subnoticus/ShadowPlay-Like-Linux-Script/assets/106459385/b16189e5-5df6-40fa-bdee-d00ddb97fa51)
+
+Then, make your system startup OBS Studio with the argument "--startreplaybuffer"
+If you can't assign arguments to the startup process (for whatever reason) simply make your computer run "obs --startreplaybuffer" on startup. (Screenshots are for KDE Plasma)
+![image](https://github.com/subnoticus/ShadowPlay-Like-Linux-Script/assets/106459385/7cb35848-dd07-4492-a459-ad32b2c3b2ce)
+![image](https://github.com/subnoticus/ShadowPlay-Like-Linux-Script/assets/106459385/c0715ea3-cef7-4254-a44f-38e48d3c7501)
