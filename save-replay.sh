@@ -14,7 +14,7 @@ notify-send -t 3000 -u normal -- "OBS Studio" "Replay is saving..." # This tells
 videopath="$HOME/Videos/"$(cat /proc/$(xdotool getwindowpid $(xdotool getwindowfocus))/comm)"" # This gets the active window and assigns it to a variable.
 withoutspaces="echo $videopath | sed 's/ //g'" # This removes spaces from the videopath if some exist
 eval "$withoutspaces" >> temp # This puts the output into a temp file so that mkdir can use it alongside the rest of the script, this will be deleted later.
-cat temp | xargs mkdir # mkdir uses this temp file to create a folder of the active window without spaces.
+cat temp | xargs mkdir -p # mkdir uses this temp file to create a folder of the active window without spaces.
 sleep 5 # This waits 5 seconds to give OBS time to encode and save the replay.
 cat temp | xargs mv ~/Videos/temp_replays/* # This moves the replay from the temporary location to the new folder that was just created.
 notify-send -t 5000 -u normal -- "OBS Studio" "Replay saved at $(cat temp)" # This sends a notifcation telling you where the replay is located.
