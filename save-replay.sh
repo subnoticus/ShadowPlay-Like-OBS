@@ -18,4 +18,4 @@ cat temp | xargs mkdir -p # mkdir uses this temp file to create a folder of the 
 sleep 5 # This waits 5 seconds to give OBS time to encode and save the replay.
 cat temp | xargs mv ~/Videos/temp_replays/* # This moves the replay from the temporary location to the new folder that was just created.
 notify-send -t 5000 -u normal -- "OBS Studio" "Replay saved at $(cat temp)" # This sends a notifcation telling you where the replay is located.
-rm temp # This deletes the temp file in order to not cause any overlapping folders.
+sudo rm temp # This deletes the temp file in order to not cause any overlapping folders.
